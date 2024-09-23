@@ -5,8 +5,13 @@ import logo from "../../Assets/nivologo1.f63d196aa9c5cd4f9aeaba030fbe64a8.svg";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
 import { RiArrowDropDownLine } from "react-icons/ri";
+import { Dropdown } from "antd";
+import { DownOutlined, SmileOutlined } from '@ant-design/icons';
+import { MenuProps } from 'antd';
+import { Space } from 'antd';
 
 function Navbar() {
+  
   return (
     <div className="navbar_properties">
       <div className="FirstNavBar">
