@@ -1,0 +1,83 @@
+.navbar_properties {
+
+  top: 0px;
+  width: 100%;
+  z-index: 5;
+  overflow: hidden;
+}
+.FirstNavBar {
+  background-color: black;
+}
+.py-2 {
+  padding-bottom: 0.5rem !important;
+  padding-top: 0.5rem !important;
+}
+.align-items-center {
+  align-items: center !important;
+}
+.justify-content-between {
+  justify-content: space-between !important;
+}
+.d-flex {
+  display: flex !important;
+}
+.nav_location_icon {
+  color: #26d48c;
+  height: 23px;
+  width: 23px;
+}
+.nav_location_text {
+  color: #ffffff80;
+}
+.navMiddleNivo {
+  --pause-on-hover: running;
+  --pause-on-click: running;
+  --width: 100%;
+  --transform: none;
+}
+.nav-middle-marquee {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: var(--width);
+  transform: var(--transform);
+  --pause-on-hover: running;
+  --pause-on-click: running;
+  --width: 100%;
+  --transform: none;
+}
+.marqee_-design {
+  flex: 0 0 auto;
+  min-width: var(--min-width);
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  animation: scroll var(--duration) linear var(--delay) var(--iteration-count);
+  animation-play-state: var(--play);
+  animation-delay: var(--delay);
+  animation-direction: var(--direction);
+  --play: running;
+  --direction: reverse;
+  --duration: 6.365277777777778s;
+  --delay: 0s;
+  --iteration-count: infinite;
+  --min-width: 100%;
+}
+.insideMarqueeContainer {
+  flex: 0 0 auto;
+  display: flex;
+  min-width: auto;
+  flex-direction: row;
+  align-items: center;
+}
+.finalChild {
+  transform: var(--transform);
+  --transform: none;
+}
+.nav-middle-text {
+  color: #28a745;
+  font-size: 15px;
+  font-weight: 600;
+}

@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Welcome from "./Components/Welcome/Welcome";
+import Cards from "./Components/Cards/Cards";
+import Navbar from "./Components/NavBar/Navbar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{backgroundColor:"#e9ecef"}}>
+      <Navbar />
+      <Welcome />
+      <Cards/>
+      <div className="footer_nav_nivotime">
+        <p>© All Rights Reserved By NivoTime</p>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,19 @@
+.background_image_demo_user{
+    background-image: url('../../Assets/welcome-banner\ 1.7cfb2f6e46f8a42d9ab7.jpg');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    min-height: 250px;
+    
+    
+}
+h4{
+    font-size: 1.5rem;
+    align-items: center;
+    color: #000 !important;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
