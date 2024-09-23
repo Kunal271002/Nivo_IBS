@@ -6,12 +6,14 @@ import Navbar from "./Components/NavBar/Navbar";
 
 function App() {
   return (
-    <div className="App" style={{backgroundColor:"#e9ecef"}}>
-      <Navbar />
-      <Welcome />
-      <Cards/>
-      <div className="footer_nav_nivotime">
-        <p>© All Rights Reserved By NivoTime</p>
+    <div className="App" style={{ backgroundColor: "#e9ecef" }}>
+      <div style={{height:"100%"}}>
+        <Navbar />
+        <Welcome />
+        <Cards />
+        <div className="footer_nav_nivotime">
+          <p>© All Rights Reserved By NivoTime</p>
+        </div>
       </div>
     </div>
   );
