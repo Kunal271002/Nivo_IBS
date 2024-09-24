@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../NavBar/Navbar1.css";
 import "../NavBar/Navbar2.css";
 import logo from "../../Assets/nivologo1.f63d196aa9c5cd4f9aeaba030fbe64a8.svg";
@@ -17,6 +17,16 @@ import Marquee from "react-fast-marquee";
 import NotificationDrawer from "../NavBar/Drawer/NotificationDrawer";
 import CartDrawer from "./Drawer/CartDrawer";
 function Navbar() {
+
+  const [showMoney,setShowMoney] = useState(false)
+
+  const handleToggle = () => {
+    setShowMoney(!showMoney);
+  }
+
+
+
+
   const items = [
     {
       key: "1",
@@ -75,20 +85,22 @@ function Navbar() {
             </div>
             <div className="d-flex align-items-center gap-3">
               <div className="d-flex align-items-center me-4 gap-2">
-                <label className="switch">
-                  {/* <input type="textbox" className="checkbox" /> */}
-                  <div className="slider-navbar">
-                    <div className="slider-navbar-inside"></div>
-                  </div>
+                <label class="switch">
+                  <input type="checkbox"
+                  className="checkbox"
+                  checked={showMoney}
+                  onChange={handleToggle}/>
+                  
+                  <span class="slider"></span>
                 </label>
-                <div className="button-price-slider"> ₹ ?</div>
+                <div className="button-price-slider">{showMoney ? "₹1,00,000" : "₹ ?"}</div>
               </div>
               <HiOutlineQuestionMarkCircle
                 style={{ color: "#5b0888" }}
                 className="Question-mark-icon"
               />
               <NotificationDrawer />
-              <CartDrawer/>
+              <CartDrawer />
               <IoPersonCircle
                 style={{ color: "#5b0888" }}
                 className="Question-mark-icon"
