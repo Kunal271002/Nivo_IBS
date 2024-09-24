@@ -76,3 +76,36 @@
   background: linear-gradient(119deg, #4a2669, #7f3cb8 75%, #b573ed) !important;
   cursor: pointer !important;
 }
+h6 {
+  text-decoration: none !important;
+
+}
+.justify-content-between{
+  justify-content: space-between !important;
+}
+.d-flex{
+  display: flex;
+}
+.Download-btn-health-card{
+  fill: #fff;
+    align-items: center;
+    background: #5b0888;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 1000;
+    padding: .3em .7em;
+    padding: 8PX ;
+  
+    
+
+    
+}
+.svg-wrapper-1{
+  display: flex;
+  gap: 5px;
+}

@@ -8,7 +8,14 @@ import logo from "../../Assets/medi-assist.6d5482dae7faba272789.jpg";
 import logo1 from "../../Assets/logoNivo.png";
 // import CardDrawer from "./Drawer/Drawer";
 // import Drawer from "../Cards/Drawer/Drawer";
+import { IoPerson } from "react-icons/io5";
+import { MdEmail } from "react-icons/md";
 import { Drawer } from "antd";
+import { Card, Space } from "antd";
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaLevelUpAlt } from "react-icons/fa";
+import { FaCloudDownloadAlt } from "react-icons/fa";
 
 function Cards() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -20,7 +27,6 @@ function Cards() {
   };
   const onclose = () => {
     setIsDrawerOpen(false);
-
   };
   const toggleDrawer1 = () => {
     setDrawerOpen(true);
@@ -29,28 +35,119 @@ function Cards() {
   };
   const onclose1 = () => {
     setDrawerOpen(false);
-
   };
 
   return (
     <>
       <Drawer title="Paramaount TPA" onClose={onclose} open={isDrawerOpen}>
-        <div className="container my-3" style={{borderRadius:"10px",border:"1px black"}}>
-            <h5>Name</h5>
-            <h5>Email</h5>
-            <h5>Phone</h5>
-            <h5>Level</h5>
-            <h5>Location</h5>
-        </div>
+        <Space direction="vertical" size={16}>
+          <Card
+            // title="Default size card"
+            // extra={<a href="#">More</a>}
+            style={{ width: 320 }}
+          >
+            <div className="d-flex justify-content-between">
+              <h6>
+                <strong
+                  className="d-flex align-item-center"
+                  style={{ gap: "6px" }}
+                >
+                  <IoPerson style={{ color: "#5b0888" }} />
+                  Name:
+                </strong>
+              </h6>
+              <div>
+                <h6>H1</h6>
+              </div>
+            </div>
+            <hr style={{ margin: "8px 0px" }} />
+            <div className="d-flex justify-content-between">
+              <h6>
+                <strong
+                  className="d-flex align-item-center"
+                  style={{ gap: "6px" }}
+                >
+                  <MdEmail style={{ color: "#5b0888" }} />
+                  Email:
+                </strong>
+              </h6>
+              <div>
+                <h6>H1</h6>
+              </div>
+            </div>
+            <hr style={{ margin: "8px 0px" }} />
+            <div className="d-flex justify-content-between">
+              <h6>
+                <strong
+                  className="d-flex align-item-center"
+                  style={{ gap: "6px" }}
+                >
+                  <FaPhoneAlt style={{ color: "#5b0888" }} />
+                  Phone:
+                </strong>
+              </h6>
+              <div>
+                <h6>H1</h6>
+              </div>
+            </div>
+            <hr style={{ margin: "8px 0px" }} />
+            <div className="d-flex justify-content-between">
+              <h6>
+                <strong
+                  className="d-flex align-item-center"
+                  style={{ gap: "6px" }}
+                >
+                  <FaLevelUpAlt style={{ color: "#5b0888" }} />
+                  Level:
+                </strong>
+              </h6>
+              <div>
+                <h6>H1</h6>
+              </div>
+            </div>
+            <hr style={{ margin: "8px 0px" }} />
+            <div className="d-flex justify-content-between">
+              <h6>
+                <strong
+                  className="d-flex align-item-center"
+                  style={{ gap: "6px" }}
+                >
+                  <FaLocationDot style={{ color: "#5b0888" }} />
+                  Location:
+                </strong>
+              </h6>
+              <div>
+                <h6>H1</h6>
+              </div>
+            </div>
+          </Card>
+        </Space>
       </Drawer>
-      <Drawer title="Helth Card" onClose={onclose1} open={DrawerOpen}>
-        <div className="container my-3" style={{borderRadius:"10px",border:"1px"}}>
-            <h5>Name1</h5>
-            <h5>Email1</h5>
-            <h5>Phone1</h5>
-            <h5>Level1</h5>
-            <h5>Location1</h5>
-        </div>
+      <Drawer title=" Download Health Card" onClose={onclose1} open={DrawerOpen}>
+        <Space direction="vertical" size={16}>
+          <Card style={{ width: 320 }}>
+            <div className="d-flex justify-content-between">
+              <h6>
+                <strong
+                  className="d-flex align-item-center"
+                  style={{ gap: "6px" }}
+                >
+                  Employee
+                </strong>
+              </h6>
+              <button className="Download-btn-health-card">
+                <div className="svg-wrapper-1">
+                  <div className="svg-wrapper">
+                    <FaCloudDownloadAlt />
+                  </div>
+                  <div>
+                    <span>Download</span>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </Card>
+        </Space>
       </Drawer>
       <div className="container my-2">
         <div className="row my-3">
@@ -60,13 +157,16 @@ function Cards() {
                 <div className="row">
                   <div className="col-md-6">
                     <a href="#">
-                      <div className="card">
+                      <div
+                        className="card"
+                        style={{ borderColor: "rgba(13, 110, 253, 1)" }}
+                      >
                         <div className="FistCard">
                           <LuFileClock
                             style={{
                               height: "30px",
                               width: "30px",
-                              color: "blue",
+                              color: "rgba(13, 110, 253, 1)",
                             }}
                           />
                           <h6 className="TrackClaim">Track Claim</h6>
@@ -76,16 +176,19 @@ function Cards() {
                   </div>
                   <div className="col-md-6">
                     <a href="#">
-                      <div className="card">
+                      <div
+                        className="card"
+                        style={{ borderColor: "rgba(255, 193, 27, 1)" }}
+                      >
                         <div className="FistCard">
                           <FaArrowRightFromBracket
                             style={{
                               height: "30px",
                               width: "30px",
-                              color: "yellow",
+                              color: "rgba(255, 193, 27, 1)",
                             }}
                           />
-                          <h6 className="TrackClaim">Initiate Claim</h6>
+                          <h6 className="text-warning">Initiate Claim</h6>
                         </div>
                       </div>
                     </a>
@@ -94,7 +197,10 @@ function Cards() {
                 <div className="row mt-3">
                   <div className="col-md-6">
                     <a href="#">
-                      <div className="card">
+                      <div
+                        className="card"
+                        style={{ borderColor: "rgba(25, 135, 84, 1)" }}
+                      >
                         <div className="FistCard">
                           <TbListDetails
                             style={{
@@ -103,23 +209,26 @@ function Cards() {
                               color: "green",
                             }}
                           />
-                          <h6 className="TrackClaim">Benifites Details</h6>
+                          <h6 className="text-success">Benifites Details</h6>
                         </div>
                       </div>
                     </a>
                   </div>
                   <div className="col-md-6">
                     <a href="#">
-                      <div className="card">
+                      <div
+                        className="card"
+                        style={{ borderColor: "rgba(220, 53, 69, 1)" }}
+                      >
                         <div className="FistCard">
                           <IoTicketSharp
                             style={{
                               height: "30px",
                               width: "30px",
-                              color: "Red",
+                              color: "rgba(220, 53, 69, 1)",
                             }}
                           />
-                          <h6 style={{ color: "red" }} className="TrackClaim">
+                          <h6 style={{ color: "red" }} className="text-danger">
                             Raise Tickets
                           </h6>
                         </div>

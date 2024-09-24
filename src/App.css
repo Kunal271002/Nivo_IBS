@@ -41,15 +41,9 @@
 }
 .footer_nav_nivotime {
   background-color: #5b0888;
-  
+  padding: 1px;
 }
-p {
-  border-top: 1px solid #cf7171cc;
-  color: #fff;
-  margin: 0 auto;
-  padding: 15px 0;
-  text-align: center;
-}
+
 html, body {
   margin: 0;
   padding: 0;
