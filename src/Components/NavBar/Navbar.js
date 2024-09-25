@@ -16,6 +16,9 @@ import { IoPersonCircle } from "react-icons/io5";
 import Marquee from "react-fast-marquee";
 import NotificationDrawer from "../NavBar/Drawer/NotificationDrawer";
 import CartDrawer from "./Drawer/CartDrawer";
+import QuestionModal from "./Modal/QuestionModal";
+
+
 function Navbar() {
 
   const [showMoney,setShowMoney] = useState(false)
@@ -95,10 +98,7 @@ function Navbar() {
                 </label>
                 <div className="button-price-slider">{showMoney ? "₹1,00,000" : "₹ ?"}</div>
               </div>
-              <HiOutlineQuestionMarkCircle
-                style={{ color: "#5b0888" }}
-                className="Question-mark-icon"
-              />
+              <QuestionModal/>
               <NotificationDrawer />
               <CartDrawer />
               <IoPersonCircle
